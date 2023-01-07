@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+:root {
+  --red-color: hsl(1, 90%, 64%);
+  --white-color: hsl(0, 0%, 100%);
+  --blue-color: hsl(219, 85%, 26%);
+  --dark-blue-color: hsl(224, 21%, 14%);
+  --grayish-blue-color: hsl(219, 14%, 63%);
+  --dark-grayish-blue-color: hsl(219, 12%, 42%);
+  --very-light-grayish-blue-color: hsl(210, 60%, 98%);
+  --light-grayish-blue-color-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-color-2: hsl(205, 33%, 90%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.read {
+  background-color: var(--very-light-grayish-blue-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--very-light-grayish-blue-color);
+}
+main .container {
+  background-color: var(--white-color);
+  max-width: 44rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.7rem 1.2rem rgba(118, 118, 124, 0.12), 0 0.3rem 0.3rem rgba(118, 118, 124, 0.16);
+}
+main .container .notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+main .container .notifications__heading {
+  font-size: 1.5rem;
+}
+main .container .notifications__number {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+main .container .notifications__read {
+  color: var(--grayish-blue-color);
+  margin-left: auto;
+}
+main .container .notifications__read:hover {
+  color: var(--blue-color);
+}
+main .container .card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+main .container .card img {
+  width: 2.5rem;
+}
+main .container .card__info {
+  color: var(--dark-grayish-blue-color);
+}
+main .container .card__info .name-and-comment a {
+  font-weight: 800;
+}
+main .container .card__info .name-and-comment .name {
+  color: var(--dark-blue-color);
+}
+main .container .card__info .name-and-comment .name:hover {
+  color: var(--blue-color);
+}
+main .container .card__info .name-and-comment .link {
+  color: var(--dark-grayish-blue-color);
+}
+main .container .card__info .name-and-comment .link:hover {
+  color: var(--blue-color);
+}
+main .container .card__info .name-and-comment .group {
+  color: var(--blue-color);
+}
+main .container .card__info .name-and-comment .group:hover {
+  color: var(--dark-grayish-blue-color);
+}
+main .container .card__info .time {
+  color: var(--grayish-blue-color);
+}
+main .container .card__info .private-message {
+  cursor: pointer;
+  margin-top: 0.8rem;
+  padding: 1rem;
+  border: var(--light-grayish-blue-color-1) 1px solid;
+  border-radius: 0.3rem;
+  color: var(--dark-grayish-blue-color);
+}
+main .container .card__info .private-message:hover {
+  background-color: var(--light-grayish-blue-color-1);
+}
+main .container .card .chess-image {
+  margin-left: auto;
+  border: 1px solid transparent;
+  display: block;
+}
+main .container .card .chess-image:hover {
+  border: 1px solid var(--light-grayish-blue-color-2);
+  border-radius: 10%;
+}
+
+@media (max-width: 40rem) {
+  main {
+    justify-content: flex-start;
+  }
+  main .container {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
